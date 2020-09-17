@@ -24,13 +24,13 @@ $RatesArray = array(
     .0875
 );
 
-echo $RatesArray[0]."<br>";
-echo $RatesArray[1]."<br>";
-echo $RatesArray[2]."<br>";
-echo $RatesArray[3]."<br>";
-echo $RatesArray[4]."<br>";
-echo $RatesArray[5]."<br>";
-echo $RatesArray[6]."<br>";
+echo $RatesArray[0]."</br>";
+echo $RatesArray[1]."</br>";
+echo $RatesArray[2]."</br>";
+echo $RatesArray[3]."</br>";
+echo $RatesArray[4]."</br>";
+echo $RatesArray[5]."</br>";
+echo $RatesArray[6]."</br>";
 
 ?>
 </body>
