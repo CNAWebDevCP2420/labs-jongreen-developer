@@ -18,7 +18,7 @@ $passwords = array(
     "P455w0rd!",
     "V4l1Dp455w0rD!",
     "b4d P4s5W0rd",
-    "$$$$$$",
+    "$$$$$$"
 
 );
 
