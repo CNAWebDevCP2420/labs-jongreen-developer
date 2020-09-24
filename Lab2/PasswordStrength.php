@@ -9,16 +9,16 @@
 
 $passwords = array(
     
-    "123aA!9",
-    "123aA!99",
-    "123aA!99",
-    "123a9",
-    "123345699",
-    "abcdefghij",
-    "123 aA!99",
-    "123aA!99",
-    "123aA!99",
-    "123aA!99",
+    "abcdefgh",
+    "ABCDEFGH",
+    "12345678",
+    "1234 abc",
+    "1233456901234567",
+    "Ab12$",
+    "P455w0rd!",
+    "V4l1Dp455w0rD!",
+    "b4d P4s5W0rd",
+    "$$$$$$",
 
 );
 
@@ -66,6 +66,8 @@ foreach($passwords as $password) {
     if($valid){
         echo "[".$password."] Password is valid</br>";
     }
+
+    echo "</br>";
 
 }
 
