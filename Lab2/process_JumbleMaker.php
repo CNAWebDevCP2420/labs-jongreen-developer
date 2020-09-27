@@ -9,7 +9,7 @@
 function displayError($fieldName, $errorMsg) {
 
     global $errorCount;
-    echo "Error for \"$fi eldName\": $errorMsg<br />\n";
+    echo "Error for \"$fieldName\": $errorMsg<br />\n";
     ++$errorCount;
 
 }
@@ -37,13 +37,13 @@ function validateWord($data, $fieldName) {
 
         if (preg_match("/^[a-z]+$/i", $retval) == 0) {
 
-        displayError($fi eldName,"Words must be only letters");
+        displayError($fieldName,"Words must be only letters");
 
         }
     }
 
     $retval = strtoupper($retval);
-    $retval = str_shuffl e($retval);
+    $retval = str_shuffle($retval);
     return($retval);
 
 }
@@ -67,7 +67,7 @@ if ($errorCount > 0) {
     foreach ($words as $word) {
 
         echo "Word ".++$wordnum.": $word<br />\n";
-        
+
     }
 }
 
