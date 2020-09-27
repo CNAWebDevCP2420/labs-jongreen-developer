@@ -42,7 +42,7 @@ function validateEmail($data, $fieldName) {
         // Only clean up the input if it isn't empty
         $retval = trim($data);
         $retval = stripslashes($retval);
-        $pattern = "/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)*(\.[[a-z]]{2,})$/i";
+        $pattern = "/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/";
 
         if (preg_match($pattern, $retval)==0) {
 
@@ -80,6 +80,8 @@ $Sender = "";
 $Email = "";
 $Subject = "";
 $Message = "";
+
+displayForm($Sender, $Email, $Subject, $Message);
 
 if (isset($_POST['Submit'])) {
 
